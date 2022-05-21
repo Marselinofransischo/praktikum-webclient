@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 11 JS</title>
+</head>
+
+<body>
+    <h2>Javascript addEventListener()</h2>
+    <button id="myBtn">Try It</button>
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click",displayDate());
+
+        function displayDate(){
+            document.getElementById("demo").innerHTML = Date();
+        }
+    </script>
+</body>
+
+</html>

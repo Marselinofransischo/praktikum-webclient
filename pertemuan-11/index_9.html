@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 11 JS</title>
+</head>
+
+<body>
+    <form name="myForm" action="/action_page.php" unsubmit="return validateForm()" method="post">
+        Name : <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm(){
+            var x = document.forms["myForm"]["fname"].value;
+            if(x=""){
+                alert("Name must be filled out");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

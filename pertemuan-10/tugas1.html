@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <title>Tugas 1</title>
+</head>
+<body>
+    <p>Daftar Nama Hewan : </p>
+    <p id="hewan"></p>
+    <p>Daftar Nama Sayuran : </p>
+    <p id="sayur"></p>
+
+    <script>
+        var hewan = ["GAJAH","MACAN","PANDA","SINGA","SAPI"];
+        var sayur = ["WORTEL","BAYAM","KANGKUNG","KACANG PANJANG","KOL"];
+        text1 = "";
+        text2 = "";
+
+        for(var i = 0;i < hewan.length;i++){
+            text1 += hewan[i] + "<br>";
+        }
+        document.getElementById("hewan").innerHTML = text1;
+
+        var x = 0;
+        while(x < sayur.length){
+            text2 += sayur[x] + "<br>";
+            x++;
+        }
+        document.getElementById("sayur").innerHTML = text2;
+
+    </script>
+</body>
+</html>
