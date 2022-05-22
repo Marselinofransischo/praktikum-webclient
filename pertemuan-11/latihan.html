@@ -116,8 +116,8 @@
             let emailValid = validasiEmail(form.elements["email"],EMAIL_REQUIRED,EMAIL_INVALID);
             let notelpValid = validasiKontak(form.elements["notelp"],TELP_REQUIRED,TELP_INVALID);
 
-            if(namaValid && emailValid){
-                alert("Demo only. No form was posted.");
+            if(namaValid && emailValid && notelpValid && alamatValid){
+                alert("Semua Isian Form Valid. No form was posted.");
             }
 
         });
